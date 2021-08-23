@@ -48,5 +48,5 @@ def authority():
 
 # if the current module is running this __name__ attribute will hold the value in main
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run(debug = True, port=8000)
 	# debug = true will make sure that any change we make will imidiately update to the web browser
