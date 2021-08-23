@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.txt{
+			width:200px;
+			height:30px;
+		}
+		#submit{
+			width:300px;
+			height:50px;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <title>SQL INJECTION</title>
+</head>
+<body>
+<center>
+<h1>CHECK FOR SQL INJECTION</h1>
+	<form method="POST">
+		<table>
+			<tr>
+				<td>Name: </td>
+				<td> <input type="text" name="name" placeholder="Name" id="name" class="txt"></td>
+			</tr>
+			<tr>
+				<td>DOB: </td>
+				<td><input type="text" name="dob" placeholder="DOB" id="dob"class="txt"></td>
+			</tr>
+			<tr>
+				<td>Age: </td>
+				<td><input type="text" name="age" placeholder="Age" id="age" class="txt"></td>
+			</tr>
+			<tr>
+				<td>Authority (0/1):  </td>
+				<td><input type="text" name="authority" placeholder="Authority (1/0)" id="authority" class="txt"></td>
+			</tr>
+			<tr>
+				<td>Password: </td>
+				<td><input type="password" name="password" placeholder="Password" id="password" class="txt"></td>
+			</tr>
+		</table>
+		<br><br><br>
+		<input type="submit" name="submit" value="SUBMIT" id="submit"><br>
+	</form>
+</center>
+</body>
+</html>
