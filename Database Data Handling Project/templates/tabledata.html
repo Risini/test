@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+		th, td{
+			width:200px;
+			height:20px;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <title>Table Data</title>
+</head>
+<body>
+<center>
+<h1>CUSTOMER DETAIL</h1>
+	{% if result %}
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>DOB</th>
+				<th>Age</th>
+				<th>Authority</th>
+				<th>Password</th>
+			</tr>
+			{% for row in result %}
+			<tr>
+				<td> {{ row.name }} </td>
+				<td> {{ row.dob }} </td>
+				<td> {{ row.age }} </td>
+				<td> {{ row.authority }} </td>
+				<td> {{ row.password }} </td>
+			</tr>
+			{% endfor %}
+		</table>
+		{% endif %}
+		
+</center>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body{
+			padding: 50px;
+			background-color: #f2f2f2;
+		}
+		#logintable{
+			float: right;
+			width: 40%;
+			height: 300px; 
+			background: #ccc;
+			padding: 50px;
+		}
+		#inserttable{
+			float: left;
+			width: 40%;
+			height: 300px;
+			background: #ccc;
+			padding: 50px;
+		}
+		.txt{
+			width:200px;
+			height:30px;
+		}
+		#submit{
+			width:320px;
+			height:50px;
+		}
+		#insert{
+			width:320px;
+			height:50px;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <title>Database Data Handling Project</title>
+</head>
+<body>
+<center>
+<h1>DATABASE DATA HANDLING PROJECT</h1>
+	<form method="POST" action="/form_tabledata">
+		<section id="logintable">
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td> <input type="text" name="name" placeholder="Name" id="loginname" class="txt"></td>
+				</tr>
+				<tr>
+					<td>Password:  </td>
+					<td><input type="password" name="password" placeholder="Password" id="loginpassword" class="txt"></td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" name="submit" value="LOG IN" id="submit">
+		</section>
+	</form>
+	<form method="POST" action="/form_insertdata">
+		<section id="inserttable">
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td> <input type="text" name="name" placeholder="Name" id="name" class="txt"></td>
+				</tr>
+				<tr>
+					<td>DOB: </td>
+					<td><input type="text" name="dob" placeholder="DOB" id="dob" class="txt"></td>
+				</tr>
+				<tr>
+					<td>Age: </td>
+					<td><input type="text" name="age" placeholder="Age" id="age" class="txt"></td>
+				</tr>
+				<tr>
+					<td>Authority (0/1):  </td>
+					<td><input type="text" name="authority" placeholder="Authority (1/0)" id="authority" class="txt"></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="password" placeholder="Password" id="password" class="txt"></td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" name="insert" value="INSERT DATA" id="insert">
+		</section>
+	</form>
+</center>
+</body>
+</html>
